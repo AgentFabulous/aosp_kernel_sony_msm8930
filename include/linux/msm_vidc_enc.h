@@ -698,7 +698,9 @@ struct venc_ltruse {
 	unsigned long ltr_id;
 	unsigned long ltr_frames;
 };
+
 struct venc_poctype {
 	unsigned long poc_type;
 };
+
 #endif /* _MSM_VIDC_ENC_H_ */
