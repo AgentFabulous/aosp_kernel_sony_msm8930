@@ -30,7 +30,7 @@
 #include <media/msm/vidc_type.h>
 #include <media/msm/vcd_api.h>
 #include <media/msm/vidc_init.h>
-
+#include <linux/msm_vidc_enc.h>
 #include "venc_internal.h"
 #include "vcd_res_tracker_api.h"
 
