@@ -515,7 +515,12 @@ struct venc_ioctl_msg{
 /*IOCTL params:GET: InputData - NULL, OutputData - venc_ltrmark.*/
 #define VEN_IOCTL_GET_LTRMARK \
 	_IOR(VEN_IOCTLBASE_ENC, 65, struct venc_ioctl_msg)
-
+/*IOCTL params:SET: InputData - venc_poctype, OutputData - NULL.*/
+#define VEN_IOCTL_SET_PIC_ORDER_CNT_TYPE \
+	_IOW(VEN_IOCTLBASE_ENC, 66, struct venc_ioctl_msg)
+/*IOCTL params:GET: InputData - NULL, OutputData - venc_poctype.*/
+#define VEN_IOCTL_GET_PIC_ORDER_CNT_TYPE \
+	_IOR(VEN_IOCTLBASE_ENC, 67, struct venc_ioctl_msg)
 struct venc_range {
 	unsigned long        max;
 	unsigned long        min;
